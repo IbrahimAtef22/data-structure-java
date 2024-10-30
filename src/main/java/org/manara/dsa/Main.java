@@ -76,6 +76,26 @@ public class Main {
         }
         System.out.println("Display LinkedList: ");
         myLinkedList.display();
+//        System.out.println("\n----Remove Node Operation----");
+//        System.out.println("Enter data to be removed:");
+//        data = input.nextInt();
+//        myLinkedList.remove(data);
+//        System.out.println("Display LinkedList: ");
+//        myLinkedList.display();
+        System.out.println("\n-----Insert data after data in LinkedList-----");
+        System.out.println("Enter new data to insert : ");
+        data = input.nextInt();
+        System.out.println("Enter data which new data will insert after it :");
+        int afterData = input.nextInt();
+        myLinkedList.insertAfter(data, afterData);
+        System.out.println("Display LinkedList: ");
+        myLinkedList.display();
+        System.out.println("\n-----Get data by index in LinkedList-----");
+        System.out.println("Enter index of node : ");
+        int index = input.nextInt();
+        data = myLinkedList.getDataByIndex(index);
+        System.out.println("Data of index " + index + " is " + data);
+
 
     }
 }
